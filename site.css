@@ -12,8 +12,10 @@
 .siteNav a:hover{background:#f7f8fc;border-color:var(--line);color:var(--ink)}
 .siteNav a.active{background:#172033;color:#fff;border-color:#172033}
 .siteNav .langLink{border-color:var(--line);background:#fff}
+.siteNav .githubLink{width:34px;height:34px;padding:7px;display:inline-grid;place-items:center;color:#526078}
+.siteNav .githubLink svg{width:18px;height:18px;display:block;fill:currentColor}
 .siteIntroTag{display:inline-flex;margin-bottom:9px;padding:5px 9px;border-radius:999px;background:#eaf0ff;color:#3348aa;font-size:11px;font-weight:800}
 @media(max-width:760px){
   .siteHeader{width:calc(100vw - 12px);position:static;align-items:flex-start;flex-direction:column}
-  .siteNav{width:100%;justify-content:flex-start}.siteNav a{flex:1;text-align:center}
+  .siteNav{width:100%;justify-content:flex-start}.siteNav a{flex:1;text-align:center}.siteNav .githubLink{flex:0 0 34px}
 }
