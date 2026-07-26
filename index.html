@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="pageTitle">GPT Decision Lab · 模型配置选择器</title>
+<script>
+  if(new URLSearchParams(location.search).get("lang")==="en")document.documentElement.lang="en";
+</script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="siteHeader">
+  <a class="siteBrand" href="index.html"><span class="siteMark">GPT</span><span>GPT Decision Lab</span></a>
+  <nav class="siteNav" aria-label="Site navigation">
+    <a id="navModels" class="active" href="index.html" data-i18n="navModels">模型与思考等级</a>
+    <a id="navContext" href="context-cost.html" data-i18n="navContext">上下文与缓存成本</a>
+    <a id="languageSwitch" class="langLink" href="?lang=en">English</a>
+  </nav>
+</header>
+<main>
+<span class="siteIntroTag" data-i18n="toolModelTag">Tool 1 · Model routing</span>
+<div class="titleRow"><h1 data-i18n="heading">GPT 多维效率选择器</h1></div>
+<p class="sub" data-i18n="subtitle">先用价格预算找到能力最强的配置，再从延迟和 Output Tokens 两个角度理解取舍。主推荐、平衡备选和图表视角各自承担不同任务。</p>
+
+<section class="panel toolbar">
+  <div><label data-i18n="scenarioLabel">场景</label><select id="scenario">
+    <option value="coding" data-i18n="scenarioCoding">编程 · 5 项</option>
+    <option value="knowledge" data-i18n="scenarioKnowledge">知识工作 · 4 项</option>
+    <option value="combined" data-i18n="scenarioCombined">综合 · 9 项</option>
+    <option value="single" data-i18n="scenarioSingle">单个 benchmark</option>
+  </select></div>
+  <div><label data-i18n="benchmarkLabel">单个 benchmark</label><select id="benchmark"></select></div>
+  <div><label data-i18n="budgetBasisLabel">预算口径</label><select id="budgetBasis">
+    <option value="costIndex" data-i18n="fairCost">公平成本指数</option>
+    <option value="rawCost" data-i18n="rawCost">官网测试套件原始成本</option>
+  </select></div>
+  <button id="reset" data-i18n="resetAll">恢复默认</button>
+</section>
+
+<section class="mainGrid">
+  <div class="panel">
+    <div class="head">
+      <h2 id="chartTitle" data-i18n="chartPrice">价格与能力</h2>
+      <div class="chartViews" aria-label="图表视角" data-i18n-aria="chartViewsAria">
+        <button class="viewBtn active" data-view="cost" data-i18n="viewPrice">价格</button>
+        <button class="viewBtn" data-view="latency" data-i18n="viewLatency">延迟</button>
+        <button class="viewBtn" data-view="tokens">Token</button>
+        <button class="viewBtn" data-view="composite" data-i18n="viewCombined">综合</button>
+        <span id="frontierPill" class="pill" data-i18n="frontierInitial">绿色线 = 价格–能力最优边界</span>
+      </div>
+    </div>
+    <div class="body">
+      <div class="budgetStrip">
+        <div class="budgetTop">
+          <div><label data-i18n="currentBudget">当前预算</label><div id="budgetRead" class="budgetRead">—</div></div>
+          <div>
+            <label data-i18n="adjustBudget">拖动预算</label>
+            <input id="budgetSlider" class="range" type="range" min="0" max="1000" step="1">
+          </div>
+          <div>
+            <label data-i18n="exactInput">精确输入</label>
+            <div class="exactWrap"><span id="budgetPrefix"></span><input id="budgetNumber" type="number" step="0.01"><span id="budgetSuffix"></span></div>
+          </div>
+          <button id="stepDown" class="step" aria-label="降低预算" data-i18n-aria="decreaseBudget">−</button>
+          <button id="stepUp" class="step" aria-label="提高预算" data-i18n-aria="increaseBudget">＋</button>
+        </div>
+        <div class="marks"><span id="markMin"></span><span id="mark25"></span><span id="mark50"></span><span id="mark75"></span><span id="markMax"></span></div>
+        <div id="frontierButtons" class="frontierButtons"></div>
+      </div>
+
+      <div class="chartNote">
+        <div id="legend" class="legend"></div>
+        <div id="chartHint" class="chartHint" data-i18n="chartHintInitial">竖虚线 = 当前预算；黑圈 = 主推荐；橙圈 = 平衡备选</div>
+      </div>
+      <div class="chartbox"><svg id="chart" height="620"></svg></div>
+      <div class="benchmarkRef">
+        <div class="benchmarkRefHead"><b>BENCHMARKS INCLUDED</b><span id="benchmarkMethod"></span></div>
+        <div id="benchmarkList" class="benchmarkList"></div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="panel">
+    <div class="head"><h2 data-i18n="recommendationTitle">当前预算建议</h2></div>
+    <div class="body">
+      <div id="hero" class="hero"></div>
+      <div id="cheaperReco" class="reco"></div>
+      <div id="balancedReco" class="reco"></div>
+      <div id="upgradeReco" class="reco"></div>
+
+      <div class="secondaryControls">
+        <h3 data-i18n="balanceSettings">综合平衡设置</h3>
+        <div class="weightRow"><div class="weightName" data-i18n="maxAbilityLoss">最多少几分</div><input id="tolerance" class="range" type="range" min="0" max="5" step=".1" value="4"><div id="toleranceOut" class="weightValue">4.0</div></div>
+        <div class="weightHeader"><b data-i18n="resourceWeights">资源比例</b><div><span id="weightTotal" data-i18n="weightTotalInitial">合计 100%</span> <button id="resetWeights" class="resetWeights" data-i18n="resetWeights">恢复默认比例</button></div></div>
+        <div class="presetRow">
+          <button class="presetBtn active" data-weights="60,30,10" data-i18n="presetDefault">默认平衡</button>
+          <button class="presetBtn" data-weights="70,25,5" data-i18n="presetPrice">价格优先</button>
+          <button class="presetBtn" data-weights="40,55,5" data-i18n="presetSpeed">速度优先</button>
+          <button class="presetBtn" data-weights="50,20,30" data-i18n="presetQuota">配额敏感</button>
+        </div>
+        <div class="weightRow"><div class="weightName" data-i18n="weightPrice">价格</div><input id="costWeight" class="range" type="range" min="0" max="100" step="1" value="60"><div id="costWeightOut" class="weightValue">60%</div></div>
+        <div class="weightRow"><div class="weightName" data-i18n="weightLatency">延迟</div><input id="latencyWeight" class="range" type="range" min="0" max="100" step="1" value="30"><div id="latencyWeightOut" class="weightValue">30%</div></div>
+        <div class="weightRow"><div class="weightName">Token</div><input id="tokenWeight" class="range" type="range" min="0" max="100" step="1" value="10"><div id="tokenWeightOut" class="weightValue">10%</div></div>
+        <div class="smallInfo" data-i18n-html="weightInfo"><strong>1.00× = GPT-5.5 Medium，综合数字越低越省。</strong>计算会同时考虑价格、延迟和 Token 的相对倍数。比例会改变橙圈综合推荐；在“综合”视图中还会移动图上的点和绿色线。主推荐仍由顶部价格预算决定。</div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="kpis">
+  <div class="panel kpi"><span data-i18n="kpiCandidates">预算内候选</span><b id="kpiCandidates">—</b><small data-i18n="kpiCandidatesSub">价格不超过当前预算</small></div>
+  <div class="panel kpi"><span data-i18n="kpiAbility">当前能力</span><b id="kpiAbility">—</b><small id="kpiAbilityMeta"></small></div>
+  <div class="panel kpi"><span>Output Tokens</span><b id="kpiTokens">—</b><small id="kpiTokensMeta"></small></div>
+  <div class="panel kpi"><span>Latency</span><b id="kpiLatency">—</b><small id="kpiLatencyMeta"></small></div>
+</section>
+
+<section class="panel" style="margin-top:16px">
+  <div class="head"><h2 data-i18n="tableTitle">全部配置与前沿状态</h2><span id="coverage" class="pill"></span></div>
+  <div class="tablewrap"><table id="table" class="tbl"></table></div>
+</section>
+
+<section class="panel foot" data-i18n-html="footer">
+  <strong>主逻辑：</strong>先按价格预算过滤，再选择预算内综合能力最高的配置。综合推荐也遵守价格预算和能力损失范围，再按价格、延迟、Token 比例寻找资源负担最低的备选。<br>
+  <strong>数据：</strong>9 个 benchmark 的 Cost、Output Tokens、Latency 均来自你上传的官方 SVG；资源数值由 SVG 点坐标与坐标轴刻度反算，避免 aria-label 取整为 0 的问题。
+</section>
+</main>
+<div id="tip" class="tooltip"></div>
+
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿benchmark,metric,source_filename,included_in_bundle
+Agents' Last Exam,cost,Agents' Last Exam(1).svg,yes
+Agents' Last Exam,tokens,3Agents' Last Exam (1)(1).svg,yes
+Agents' Last Exam,latency,2Agents' Last Exam(1).svg,yes
+Artificial Analysis Intelligence Index v4.1,cost,Artificial Analysis Intelligence Index v4.1(2).svg,yes
+Artificial Analysis Intelligence Index v4.1,tokens,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,yes
+Artificial Analysis Intelligence Index v4.1,latency,Artificial Analysis Intelligence Index v4.1 (1)(1).svg,yes
+Artificial Analysis Coding Agent Index v1.1,cost,Artificial Analysis Coding Agent Index v1.1(2).svg,yes
+Artificial Analysis Coding Agent Index v1.1,tokens,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,yes
+Artificial Analysis Coding Agent Index v1.1,latency,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg,yes
+Terminal-Bench 2.1,cost,Terminal-Bench 2.1(2).svg,yes
+Terminal-Bench 2.1,tokens,Terminal-Bench 2.1 (1).svg,yes
+Terminal-Bench 2.1,latency,Terminal-Bench 2.1 (2).svg,yes
+DeepSWE v1.1,cost,DeepSWE v1.1(1).svg,yes
+DeepSWE v1.1,tokens,DeepSWE v1.1 (2).svg,yes
+DeepSWE v1.1,latency,DeepSWE v1.1 (1).svg,yes
+BrowseComp,cost,BrowseComp(1).svg,yes
+BrowseComp,tokens,BrowseComp (2)(1).svg,yes
+BrowseComp,latency,BrowseComp (1)(1).svg,yes
+GDPval-AA v2,cost,GDPval-AA v2(2).svg,yes
+GDPval-AA v2,tokens,GDPval-AA v2 (2)(1).svg,yes
+GDPval-AA v2,latency,GDPval-AA v2 (1).svg,yes
+OSWorld 2.0,cost,OSWorld 2.0(1).svg,yes
+OSWorld 2.0,tokens,OSWorld 2.0 (2)(1).svg,yes
+OSWorld 2.0,latency,OSWorld 2.0 (1)(1).svg,yes
+AutomationBench,cost,AutomationBench(2).svg,yes
+AutomationBench,tokens,AutomationBench (2)(1).svg,yes
+AutomationBench,latency,AutomationBench (1)(1).svg,yes

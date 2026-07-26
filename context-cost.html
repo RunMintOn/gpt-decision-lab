@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="pageTitle">GPT Decision Lab · 上下文与缓存成本</title>
+<script>if(new URLSearchParams(location.search).get("lang")==="en")document.documentElement.lang="en";</script>
+<link rel="stylesheet" href="context-cost.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="siteHeader">
+  <a class="siteBrand" href="index.html"><span class="siteMark">GPT</span><span>GPT Decision Lab</span></a>
+  <nav class="siteNav" aria-label="Site navigation">
+    <a id="navModels" href="index.html" data-i18n="navModels">模型与思考等级</a>
+    <a id="navContext" class="active" href="context-cost.html" data-i18n="navContext">上下文与缓存成本</a>
+    <a id="languageSwitch" class="langLink" href="context-cost.html?lang=en">English</a>
+  </nav>
+</header>
+<main>
+<span class="siteIntroTag" data-i18n="toolTag">Tool 2 · Context economics</span>
+<h1 data-i18n="heading">上下文与缓存成本模拟</h1>
+<p class="sub" data-i18n-html="subtitle">横轴是当前请求的 <strong>Prompt input tokens</strong>。正常情况下，与上一轮相同的历史前缀继续命中缓存；固定数量的“灾难轮”会让当前整段前缀失效，并按 Cache Write 价格从零重建。灾难位置可设为均匀随机、偏前期、偏中期或偏后期。</p>
+
+<section class="panel controls">
+  <div><label data-i18n="model">模型</label><select id="model"><option value="Luna">GPT-5.6 Luna</option><option value="Terra">GPT-5.6 Terra</option><option value="Sol" selected>GPT-5.6 Sol</option></select></div>
+  <div><label data-i18n="turns">总轮数</label><input id="turns" type="number" value="130" min="2" max="5000" step="1"></div>
+  <div><label data-i18n="maxContext">最终 Prompt input tokens</label><input id="maxContext" type="number" value="372000" min="1000" max="1050000" step="1000"></div>
+  <div><label data-i18n="startContext">第一轮 Prompt input tokens</label><input id="startContext" type="number" value="2000" min="1" step="100"></div>
+  <div><label data-i18n="newInput">每轮新增未缓存输入</label><input id="newInput" type="number" value="1512" min="0" step="1"></div>
+  <div><label data-i18n="output">每轮输出 tokens</label><input id="output" type="number" value="100" min="0" step="1"></div>
+  <div><label data-i18n="failures">灾难轮数量</label><input id="failures" type="number" value="5" min="0" step="1"></div>
+  <div><label data-i18n="bias">灾难位置倾向</label><select id="bias"><option value="uniform" data-i18n="uniform">均匀随机</option><option value="early" data-i18n="early">偏前期</option><option value="middle" data-i18n="middle">偏中期</option><option value="late" data-i18n="late">偏后期</option></select></div>
+  <div><label data-i18n="sims">Monte Carlo 次数</label><input id="sims" type="number" value="1500" min="100" max="10000" step="100"></div>
+  <div><label data-i18n="seed">随机种子</label><input id="seed" type="number" value="56" step="1"></div>
+  <div><label data-i18n="pricing">价格口径</label><select id="pricing"><option value="standard" selected>Standard API</option><option value="discount">Batch / Flex</option></select></div>
+  <div style="display:flex;align-items:end;gap:8px"><button id="reroll" data-i18n="reroll">换一条随机样本</button><button id="reset" class="secondary" data-i18n="reset">恢复默认</button></div>
+</section>
+
+<section class="kpis">
+  <div class="panel kpi"><span data-i18n="failureRate">灾难比例</span><b id="failureRate">—</b><small data-i18n="failureRateSub">固定次数 ÷ 总轮数</small></div>
+  <div class="panel kpi"><span data-i18n="growth">每轮 Prompt 净增长</span><b id="growth">—</b><small data-i18n="growthSub">由首轮、末轮和总轮数推导</small></div>
+  <div class="panel kpi"><span data-i18n="lastCost">最后一轮单轮成本</span><b id="lastCost">—</b><small data-i18n="lastCostSub">基准 / Monte Carlo 期望</small></div>
+  <div class="panel kpi"><span data-i18n="totalCost">累计总成本</span><b id="totalCost">—</b><small data-i18n="totalCostSub">基准 / Monte Carlo 期望</small></div>
+  <div class="panel kpi"><span data-i18n="extraCost">灾难额外成本</span><b id="extraCost">—</b><small data-i18n="extraCostSub">均值及 10–90% 区间</small></div>
+</section>
+
+<section class="grid">
+  <section class="panel">
+    <div class="head"><h2 data-i18n="singleTitle">单轮成本 vs Prompt input tokens</h2><span class="badge" data-i18n="brokenAxis">断轴：正常趋势与灾难尖峰分开显示</span></div>
+    <div class="body">
+      <div class="chartbox"><svg id="singleChart" viewBox="0 0 1120 700"></svg></div>
+      <div class="legend"><span><i class="swatch" style="background:#0b9b78"></i><span data-i18n="idealPrefix">理想前缀复用（无整段灾难）</span></span><span><i class="swatch" style="background:#315bd6"></i><span data-i18n="expectedSingle">固定灾难次数随机分布后的单轮期望</span></span><span><i class="swatch" style="background:#d65268"></i><span data-i18n="sampleDisasters">具体样本的灾难位置与重建成本</span></span></div>
+      <div class="note" data-i18n="singleNote">下方放大正常调用成本；上方单独显示灾难轮的完整缓存重建成本。红色竖虚线连接同一个 Prompt 长度，因此尖峰没有被删除，只是使用独立纵轴。</div>
+    </div>
+  </section>
+  <section class="panel">
+    <div class="head"><h2 data-i18n="cumTitle">累计总成本 vs Prompt input tokens</h2><span class="badge" data-i18n="band">浅蓝带 = 10–90% 随机区间</span></div>
+    <div class="body">
+      <div class="chartbox"><svg id="cumChart" viewBox="0 0 1120 630"></svg></div>
+      <div class="legend"><span><i class="swatch" style="background:#0b9b78"></i><span data-i18n="baseline">无灾难基准</span></span><span><i class="swatch" style="background:#d65268"></i><span data-i18n="sampleCum">具体样本累计成本</span></span></div>
+      <div class="note" data-i18n="cumNote">累计图只保留无灾难基准、具体随机样本和 10–90% 随机区间。不同灾难位置路径的逐点平均线不对应真实路径，因此没有显示。</div>
+    </div>
+  </section>
+</section>
+
+<section class="panel" style="margin-top:16px">
+  <div class="head"><h2 data-i18n="biasCompare">前期 / 中期 / 后期 / 均匀倾向对比</h2><div class="modelTabs"><button class="modelTab active" data-model="Luna">Luna</button><button class="modelTab" data-model="Terra">Terra</button><button class="modelTab" data-model="Sol">Sol</button></div></div>
+  <div class="body tablewrap"><table class="tbl" id="biasTable"></table></div>
+</section>
+
+<section class="panel foot" data-i18n-html="footer">
+  <strong>模型定义：</strong>第 1 轮没有历史缓存，因此按完整 Cache Write 处理，但不计入“灾难轮”。灾难轮从第 2 轮至最后一轮无放回抽取；灾难轮结束后，下一轮恢复正常前缀缓存读取。<br>
+  <strong>价格规则：</strong>默认使用 GPT‑5.6 Standard API 的 Input、Cached Input、Cache Write 和 Output 价格。当前官方规则仍规定输入超过 272K 时，整次请求切换到长上下文价格。价格核验日期：2026-07-18。这里是 API 等效成本，不等于 Plus/Codex 套餐额度扣减。
+</section>
+</main>
+<script src="context-i18n.js"></script>
+<script src="context-cost.js"></script>
+</body>
+</html>

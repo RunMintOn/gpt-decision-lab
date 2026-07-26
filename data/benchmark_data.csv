@@ -1,0 +1,237 @@
+﻿benchmark,model,effort,score,score_unit,cost_usd,output_tokens,latency_min,cost_source,tokens_source,latency_source
+Agents' Last Exam,Claude Fable 5,Adaptive,40.5,percent,2315.0,9440000.000000002,4438.8,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Claude Opus 4.8,Low,37.4,percent,1183.0000000000002,3950000.0000000014,4047.0,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Claude Opus 4.8,Medium,37.8,percent,1700.0,5470000.000000001,5649.6,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Claude Opus 4.8,High,38.7,percent,1626.0,6430000.000000002,4803.6,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Claude Opus 4.8,Xhigh,42.3,percent,2815.0000000000005,16510000.0,7822.8,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Claude Opus 4.8,Max,45.2,percent,3985.0000000000005,22070000.0,9825.6,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.5,Low,37.5,percent,135.0,1230000.0000000016,954.6593333333333,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.5,Medium,41.4,percent,298.0,2550000.0000000014,2128.7293333333337,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.5,High,44.9,percent,382.0,2990000.000000002,2540.970888888889,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.5,Xhigh,46.9,percent,602.0,6370000.000000001,3916.5131111111114,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Luna,Low,30.7,percent,24.0,590000.0000000019,367.2669738697534,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Luna,Medium,36.1,percent,57.0,1100000.0000000016,858.9139026081017,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Luna,High,45.4,percent,140.99999999999997,2630000.000000002,2007.8627913872492,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Luna,Xhigh,48.7,percent,254.00000000000003,4250000.000000002,3788.9502181187145,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Luna,Max,50.3,percent,429.00000000000006,6870000.000000001,5686.069798736334,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Sol,Low,44.8,percent,248.0,1270000.0000000016,1753.5237888217168,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Sol,Medium,51.9,percent,519.0,2200000.0000000014,2226.809185403482,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Sol,High,52.1,percent,577.0,2890000.0000000014,2515.79914278276,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Sol,Xhigh,53.6,percent,763.0,3800000.0000000014,3227.551078811677,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Sol,Max,52.7,percent,1087.0,5440000.000000001,3916.421172014094,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Terra,Low,40.3,percent,89.0,1120000.0000000016,883.4815081967213,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Terra,Medium,42.6,percent,128.00000000000003,1570000.0000000016,1182.425617486339,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Terra,High,46.3,percent,264.00000000000006,2790000.0000000014,1899.464918032787,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Terra,Xhigh,48.5,percent,381.00000000000006,3820000.0000000014,2746.945213114754,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,GPT-5.6 Terra,Max,50.4,percent,544.0,5780000.000000001,3980.406994535519,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Agents' Last Exam,Gemini 3.1 Pro Preview,Xhigh,32.1,percent,2017.9999999999998,3540000.000000002,5789.999999999999,Agents' Last Exam(1).svg,3Agents' Last Exam (1)(1).svg,2Agents' Last Exam(1).svg
+Artificial Analysis Coding Agent Index v1.1,Claude Fable 5,Max,77.2,index,3771.84,38395071.0,23.48166666666667,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,Claude Opus 4.8,Medium,67.0,index,1047.84,16276831.0,12.411666666666667,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,Claude Opus 4.8,Max,72.5,index,2470.91,46917885.00000001,23.12833333333333,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.5,None,45.5,index,329.70405876,2007902.0,2.8550000000000013,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.5,Low,57.7,index,405.43223348000004,2785532.0000000005,4.321666666666668,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.5,Medium,70.5,index,933.5997050399999,5520072.0,6.401666666666669,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.5,High,72.5,index,939.5717146449998,8005419.0,8.505000000000003,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.5,Xhigh,76.4,index,1714.2779394749996,12180831.000000002,10.083333333333334,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,None,37.3,index,123.65997134999998,2547586.0000000005,2.4950000000000014,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,Low,42.4,index,74.84241854999999,2150259.0,1.9233333333333351,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,Medium,58.7,index,165.97320760000002,4878564.0,3.371666666666668,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,High,67.9,index,332.3607346,10359692.0,5.651666666666668,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,Xhigh,70.8,index,433.75439865,15123566.0,6.590000000000001,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Luna,Max,74.6,index,537.4043775,20846143.0,7.995,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,None,58.4,index,475.5742482499999,2459906.0,3.438333333333335,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,Low,69.1,index,602.8730494999999,3409070.0000000005,3.698333333333334,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,Medium,74.6,index,1042.0151679999997,6136031.999999999,5.170000000000001,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,High,77.1,index,1438.7729525,9051959.0,6.321666666666669,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,Xhigh,78.7,index,1816.6190895,12290445.0,7.393333333333335,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Sol,Max,80.0,index,2454.94987925,17610095.000000004,10.168333333333333,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,None,40.3,index,131.73744237499997,1659845.0000000002,1.7933333333333348,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,Low,53.8,index,170.108040625,2585035.0000000005,2.783333333333335,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,Medium,64.2,index,312.262221,5136743.0,4.273333333333333,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,High,71.8,index,546.314919125,10163524.0,6.18,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,Xhigh,73.2,index,649.741791125,12891261.0,6.881666666666667,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,GPT-5.6 Terra,Max,77.4,index,941.7218189999999,19494869.000000004,8.373333333333333,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Coding Agent Index v1.1,Gemini 3.1 Pro Preview,n/a,42.7,index,640.85,5914838.0,10.823333333333332,Artificial Analysis Coding Agent Index v1.1(2).svg,Artificial Analysis Coding Agent Index v1.1 (2)(1).svg,Artificial Analysis Coding Agent Index v1.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,Claude Fable 5,Max,59.86,index,5630.52,86856045.0,5.641666666666667,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,Claude Opus 4.8,Max,55.69,index,3752.5499999999997,116735222.0,7.052666666666666,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.5,None,35.38,index,194.75646021499998,2204202.0000000075,0.41900000000000004,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.5,Low,43.46,index,360.370052935,6796396.0000000065,0.5708333333333333,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.5,Medium,50.41,index,875.1501006850001,21299559.000000007,1.4271666666666665,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.5,High,53.13,index,1663.058624945,42829627.0,2.553166666666667,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.5,Xhigh,54.84,index,2643.6289586500006,72301736.0,4.014,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,None,26.56,index,54.373533450000004,2357378.0000000075,0.15816666666666668,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,Low,33.26,index,71.7637493,6971397.0000000065,0.17949999999999997,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,Medium,38.05,index,108.8287219,12479860.000000007,0.29,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,High,46.06,index,277.99034639999996,37034644.0,0.6449999999999999,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,Xhigh,49.07,index,483.3394257,66735430.99999999,1.0258333333333334,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Luna,Max,51.24,index,875.9350894999999,125011184.99999997,1.2179999999999997,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,None,41.2,index,256.3296645,2648394.000000007,0.33566666666666667,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,Low,49.44,index,368.27883024999994,6584353.0000000065,0.3996666666666667,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,Medium,53.59,index,607.8485405,11976871.000000006,0.603,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,High,55.87,index,970.4779674999999,21248736.000000004,1.0001666666666664,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,Xhigh,57.65,index,1557.80736175,35398293.0,1.4724999999999997,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Sol,Max,58.89,index,2839.4246524999994,70085722.0,2.2161666666666666,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,None,33.97,index,131.03585599999997,2575228.000000007,0.2515,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,Low,40.47,index,168.04735050000002,5938387.0000000065,0.25616666666666665,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,Medium,45.57,index,247.627065,10422690.000000006,0.49983333333333335,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,High,48.95,index,503.2113295,23635170.000000004,0.8298333333333333,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,Xhigh,51.6,index,748.36942325,36365888.0,1.2398333333333333,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,GPT-5.6 Terra,Max,54.95,index,1766.139945875,95509319.0,2.0324999999999998,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,Gemini 3.1 Pro Preview,n/a,46.46,index,815.1100000000001,55956209.00000001,1.7503333333333335,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+Artificial Analysis Intelligence Index v4.1,Gemini 3.5 Flash,High,50.2,index,1040.88,75383395.0,2.8408333333333333,Artificial Analysis Intelligence Index v4.1(2).svg,Artificial Analysis Intelligence Index v4.1 (2)(1).svg,Artificial Analysis Intelligence Index v4.1 (1)(1).svg
+AutomationBench,Claude Fable 5,Max,17.4,percent,3.672,13699.999999999998,4.776754500000001,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,Claude Opus 4.8,Max,15.5,percent,2.356,30899.999999999996,7.271760000000001,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.4,None,1.2,percent,0.099754435,1681.9999999999964,0.765716222222223,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.4,Low,3.5,percent,0.1666999975,3081.9999999999964,1.2615897777777785,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.4,Medium,6.1,percent,0.400861855,10058.999999999998,3.555644666666667,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.4,High,7.6,percent,0.583231105,17184.999999999996,5.706781111111111,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.4,Xhigh,7.3,percent,1.0236667099999999,39290.0,12.185161555555556,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.5,None,3.3,percent,0.253856745,2080.999999999997,0.9523642222222228,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.5,Low,6.7,percent,0.411203705,3074.9999999999964,1.3007480000000007,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.5,Medium,8.5,percent,0.66276498,6608.999999999997,2.509569333333334,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.5,High,11.3,percent,0.886311345,12852.999999999998,4.4910211111111105,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.5,Xhigh,12.9,percent,1.12972645,17099.999999999996,5.747032666666668,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,None,1.4,percent,0.055550199999999994,1874.9999999999966,0.6379734936647428,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,Low,3.7,percent,0.0554368,2627.9999999999964,0.7164317825666573,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,Medium,6.2,percent,0.09198730000000001,4670.999999999997,1.1687709274176064,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,High,10.2,percent,0.19289779999999995,10365.999999999996,2.4568155376454013,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,Xhigh,12.9,percent,0.27126005,13375.999999999998,3.1912612228940045,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Luna,Max,14.9,percent,0.49523114999999995,23673.999999999996,5.7253356785879665,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,None,9.7,percent,0.47480574999999997,3342.999999999997,1.3006318762173446,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,Low,9.6,percent,0.32794949999999995,3097.999999999997,1.0738332549367555,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,Medium,12.6,percent,0.527385,4641.999999999996,1.5754721374855003,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,High,12.3,percent,0.56589925,5814.999999999996,1.8925364098390176,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,Xhigh,17.0,percent,0.796096,7582.999999999996,2.3699078303610843,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Sol,Max,18.1,percent,1.1845754999999998,10799.999999999998,3.466638190341384,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,None,4.1,percent,0.11374637499999998,2196.999999999997,0.7287234043715854,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,Low,6.2,percent,0.137251875,2856.999999999997,0.86367905737705,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,Medium,9.3,percent,0.204433,4291.999999999997,1.3122743852459025,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,High,10.0,percent,0.219863375,6230.999999999996,1.6741964562841538,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,Xhigh,12.3,percent,0.30918762499999997,8848.999999999996,2.096244019125684,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,GPT-5.6 Terra,Max,15.2,percent,0.584566875,15818.0,3.8047556366120223,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+AutomationBench,Gemini 3.5 Flash,High,14.5,percent,0.8659999999999999,14199.999999999996,2.8868100000000005,AutomationBench(2).svg,AutomationBench (2)(1).svg,AutomationBench (1)(1).svg
+BrowseComp,GPT-5.5,None,34.68,percent,1.41917921,724.292,0.518947129972223,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.5,Low,57.82,percent,2.7224032499999997,2297.3800000000006,1.1010461455277785,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.5,Medium,78.12,percent,18.9482385,10349.800000000001,4.5029886336111105,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.5,High,83.89,percent,30.016582999999997,17004.800000000003,7.075182272555555,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.5,Xhigh,84.36,percent,33.26930899999999,21280.800000000003,8.45316970716667,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Luna,Low,45.73,percent,0.083110085,1420.08,0.45189424918526444,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Luna,Medium,58.85,percent,0.22789371999999997,3338.0700000000006,1.036946000993521,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Luna,High,80.02,percent,1.0336695,14894.100000000002,3.9673029924470344,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Luna,Xhigh,84.04,percent,1.3308836499999999,20878.099999999995,5.138150166045364,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Luna,Max,83.25,percent,1.4165879499999998,23439.1,5.501828460173444,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,None,69.67,percent,1.9734843499999997,2116.92,1.5946873553270595,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,Low,65.32,percent,0.496856575,1880.93,0.7438376343315399,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,Medium,83.41,percent,2.054468,6106.73,2.3547618298160904,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,High,87.52,percent,3.4782814999999996,10551.2,3.870023122102203,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,Xhigh,88.78,percent,4.5883495,15019.299999999997,5.199450425135329,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol,Max,90.36,percent,6.359543249999999,21238.400000000005,7.106081003450113,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Sol Ultra,Max,92.18,percent,12.173256025671,54138.37440800001,6.577935191698134,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Terra,Low,50.47,percent,0.20236482499999994,1447.18,0.4991456516806018,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Terra,Medium,67.38,percent,0.4704771749999999,3552.98,1.0516315218497274,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Terra,High,79.3,percent,1.5283818749999998,11875.800000000001,3.017559347275957,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Terra,Xhigh,81.52,percent,1.8495986249999998,15894.3,3.769175877254099,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+BrowseComp,GPT-5.6 Terra,Max,87.52,percent,3.12443025,25664.600000000002,6.013977900710384,BrowseComp(1).svg,BrowseComp (2)(1).svg,BrowseComp (1)(1).svg
+DeepSWE v1.1,Claude Fable 5,Low,60.0,percent,3.757873000000002,25242.83,10.578433333333331,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Fable 5,Medium,65.0,percent,6.0881870000000005,40201.35,13.51495,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Fable 5,High,69.0,percent,9.177638000000002,57287.07,17.705066666666667,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Fable 5,Xhigh,70.0,percent,13.414521000000002,80352.17,23.526383333333335,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Fable 5,Max,70.0,percent,21.634701999999997,118592.76999999999,34.86685,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Opus 4.8,Low,41.0,percent,2.293369000000002,28922.74,10.863783333333334,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Opus 4.8,Medium,49.0,percent,3.4438570000000017,41313.45,14.666799999999999,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Opus 4.8,High,52.0,percent,4.281940000000001,50063.52999999999,17.78173333333333,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Opus 4.8,Xhigh,54.0,percent,8.006356000000002,86088.79,36.64623333333333,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Claude Opus 4.8,Max,59.0,percent,13.222584,135031.67,58.212349999999994,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.5,Low,27.0,percent,1.2315060734500016,9442.77,3.1408260599999998,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.5,Medium,54.0,percent,2.8496637604500012,19625.43,7.077201033333333,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.5,High,64.0,percent,5.2865415398,31159.500000000004,11.733937913333332,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.5,Xhigh,67.0,percent,7.4690677174000015,46294.719999999994,18.441596197777777,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,None,2.0,percent,0.18669413150000178,5891.330000000001,1.5386012944987257,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,Low,2.0,percent,0.08313858950000176,3127.75,0.6853518600097228,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,Medium,11.0,percent,0.24560134400000183,8179.569999999999,1.9444091540076887,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,High,44.0,percent,0.8563136670000018,25778.269999999997,7.605284918850085,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,Xhigh,57.0,percent,1.6207141100000013,44677.899999999994,15.219270658807593,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Luna,Max,67.0,percent,2.8781184060000022,73399.71,28.516975421464647,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,None,44.0,percent,2.430281475000002,14413.809999999998,5.730205276841238,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,Low,45.0,percent,1.1856088550000017,10579.14,3.451246120112017,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,Medium,61.0,percent,2.0119317100000016,18425.22,6.311390967765595,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,High,69.0,percent,3.8106407850000017,28450.32,10.160956526965013,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,Xhigh,71.0,percent,5.031163927500002,40744.59,14.891343926042945,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Sol,Max,73.0,percent,8.5614837575,60013.64,24.0150895518224,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,None,14.0,percent,0.4091984587500017,6737.29,1.8561748415300545,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,Low,24.0,percent,0.4774730025000018,8572.26,2.100371040983606,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,Medium,35.0,percent,0.6459648500000017,11746.56,2.903825904371585,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,High,54.0,percent,1.2516978100000018,21517.04,5.444236284153006,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,Xhigh,60.0,percent,2.324981080000002,39616.54,10.301990844262294,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,GPT-5.6 Terra,Max,70.0,percent,5.049501192500002,71938.63,23.145558715847,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+DeepSWE v1.1,Gemini 3.1 Pro Preview,High,12.0,percent,9.481519000000002,196386.1,36.64483333333333,DeepSWE v1.1(1).svg,DeepSWE v1.1 (2).svg,DeepSWE v1.1 (1).svg
+GDPval-AA v2,Claude Fable 5,Max,1760.0,elo,1704.12,16297941.0,22.32813081666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,Claude Opus 4.8,Max,1600.0,elo,955.0,19024190.0,22.672391100000002,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.5,None,1119.0,elo,31.777525830000002,681244.0,1.738097208333333,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.5,Low,1191.0,elo,40.18921782,841530.0,2.5739846966666664,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.5,Medium,1375.0,elo,143.14817554500002,2404206.0,4.862400606666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.5,High,1471.0,elo,267.175931465,3744723.9999999995,9.0261325,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.5,Xhigh,1494.0,elo,382.47108799500006,5141984.000000001,11.021295606666666,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,None,1068.0,elo,8.51317275,778317.0000000001,0.2651666666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,Low,1146.0,elo,7.9727296999999995,911344.9999999999,0.3236666666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,Medium,1273.0,elo,14.608649599999998,1524286.0,0.5486666666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,High,1472.0,elo,45.28158,3754500.0,1.356,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,Xhigh,1539.0,elo,73.41629295,5457351.999999999,2.037166666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Luna,Max,1592.0,elo,112.46062309999998,7498043.0,2.195,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,None,1384.0,elo,70.91666174999999,1263170.0,0.9291666666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,Low,1445.0,elo,72.81788225,1587779.0,1.1501666666666668,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,Medium,1562.0,elo,161.9105395,2917921.0,1.9030000000000002,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,High,1630.0,elo,301.56719375,4667364.0,3.1718333333333337,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,Xhigh,1702.0,elo,465.11133550000005,6580074.999999999,4.430666666666666,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Sol,Max,1748.0,elo,768.56653925,8928180.0,5.860333333333334,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,None,1239.0,elo,35.124174625,1155012.0,0.6131666666666666,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,Low,1249.0,elo,25.03288475,1101763.0,0.568,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,Medium,1404.0,elo,50.45119300000001,2056058.0,1.2393333333333334,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,High,1513.0,elo,133.6589265,4659289.0,2.271333333333333,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,Xhigh,1572.0,elo,203.0415315,6570391.0,3.355166666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,GPT-5.6 Terra,Max,1593.0,elo,316.668552375,9008303.0,4.296666666666667,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,Gemini 3.1 Pro Preview,n/a,962.0,elo,59.99,2556720.0,3.3587272733333324,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+GDPval-AA v2,Gemini 3.5 Flash,High,1349.0,elo,382.86,19062100.0,10.93808197,GDPval-AA v2(2).svg,GDPval-AA v2 (2)(1).svg,GDPval-AA v2 (1).svg
+OSWorld 2.0,GPT-5.5,None,2.98,percent,0.32444167499999643,1006.0,1.7140202277777707,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.5,Low,16.26,percent,1.6633380949999967,3965.0000000000005,6.040541955555549,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.5,Medium,36.9,percent,8.299937379999996,15885.000000000002,19.065622533333325,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.5,High,40.44,percent,11.492601544999998,25456.0,26.453716411111103,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.5,Xhigh,47.48,percent,16.067843475,38587.0,36.1931837611111,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,None,4.84,percent,0.38759224999999653,1562.0,4.160153469652216,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,Low,9.55,percent,0.1617176999999965,1902.9999999999998,2.7955828158709832,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,Medium,18.03,percent,0.6091596499999965,5222.0,7.972324535696049,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,High,33.04,percent,3.158469549999997,19213.0,27.30069809143517,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,Xhigh,41.83,percent,6.127721099999997,38570.0,47.84201393461968,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Luna,Max,45.57,percent,7.794687199999997,54667.0,60.42204201305842,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,None,10.02,percent,2.224841499999997,1985.0,5.061582742657076,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,Low,20.73,percent,1.8581372499999966,3935.9999999999995,6.041476294177596,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,Medium,42.21,percent,7.520123749999997,10511.0,16.918988621418297,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,High,49.75,percent,14.770059999999999,18190.0,27.90301423756966,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,Xhigh,55.82,percent,20.185604249999997,27552.0,38.823239130554704,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Sol,Max,62.57,percent,26.6177805,38801.0,49.58187480648239,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,None,4.77,percent,0.5353338749999965,1410.0,3.5693800344262225,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,Low,13.11,percent,0.5223332499999964,2611.0,4.036369232786878,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,Medium,22.23,percent,1.7509713749999967,6853.0,9.295528124863381,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,High,36.61,percent,6.244395499999998,18793.0,23.879700323497264,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,Xhigh,46.1,percent,10.473652624999998,32033.0,37.489202207650266,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+OSWorld 2.0,GPT-5.6 Terra,Max,50.2,percent,14.678834874999998,50274.0,53.52752856420764,OSWorld 2.0(1).svg,OSWorld 2.0 (2)(1).svg,OSWorld 2.0 (1)(1).svg
+Terminal-Bench 2.1,GPT-5.5,Low,72.8,percent,0.34850532853932537,3204.7280898876406,3.3589004943820227,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.5,Medium,80.0,percent,0.5389440307415727,5138.96404494382,4.110970301622972,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.5,High,83.8,percent,0.9129094922247187,9280.669662921347,5.303651600499377,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.5,Xhigh,85.6,percent,1.3298602342471904,15275.038202247191,6.949155139575529,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Luna,Low,49.4,percent,0.13454829898881956,3828.45842697,1.930345302037661,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Luna,Medium,58.7,percent,0.25425441617984457,7407.319101120001,2.8810046843656743,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Luna,High,73.9,percent,0.44464787943839956,13574.887640399998,3.6024309031901907,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Luna,Xhigh,74.6,percent,0.5894639613483497,18444.9595506,4.318048282239708,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Luna,Max,82.5,percent,0.6270010403370996,21333.3123596,4.2770418948794475,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol,Low,76.4,percent,0.6628902410107995,3828.31011236,2.1369135736144775,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol,Medium,81.8,percent,0.8932330932581997,5552.91460674,2.6511673992442635,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol,High,84.7,percent,1.0930691702249247,7229.32359551,2.941834744867654,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol,Xhigh,84.9,percent,1.3310603494380497,9515.28539326,3.464363183718805,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol,Max,88.8,percent,1.7200842764057493,12795.804494400001,4.240172912070198,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Sol Ultra,Max,91.9,percent,5.140842334830001,39275.1280899,4.278585916301308,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Terra,Low,55.5,percent,0.24350158033728708,3738.20224719,1.803620343218443,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Terra,Medium,71.7,percent,0.41270546488746207,6273.60898876,2.699500893348812,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Terra,High,76.6,percent,0.6317367668534997,10354.2157303,3.4468240977387072,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Terra,Xhigh,79.6,percent,0.7254301699443745,13110.476404500001,3.653840564867593,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
+Terminal-Bench 2.1,GPT-5.6 Terra,Max,84.3,percent,0.9732222292142496,18536.5078652,4.502611499359981,Terminal-Bench 2.1(2).svg,Terminal-Bench 2.1 (1).svg,Terminal-Bench 2.1 (2).svg
