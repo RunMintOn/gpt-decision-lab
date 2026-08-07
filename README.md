@@ -32,4 +32,4 @@ The folder is fully static. Upload the folder to GitHub Pages, Cloudflare Pages,
 
 ## Data notes
 
-The model selector reconstructs Cost, Output Tokens, and Latency from supplied official benchmark SVG geometry. The context simulator uses current GPT-5.6 API price tables embedded in `context-cost.js`; verify prices before long-lived public deployment.
+The model selector reconstructs Cost, Output Tokens, and Latency from supplied official benchmark SVG geometry. Both tools include a site-wide **price version** switch (default: after the 2026-07-30 price change, which cut GPT-5.6 Luna −80% and Terra −20%; Sol unchanged) with a legacy option for the pre-adjustment rates. The switch is remembered in the browser (`gpdl:price`). Verify the embedded tables before long-lived public deployment.

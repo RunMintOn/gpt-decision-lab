@@ -17,6 +17,9 @@ const EN_TEXT={
   budgetBasisLabel:"Budget basis",
   fairCost:"Fair cost index",
   rawCost:"Raw benchmark-suite cost",
+  priceVersion:"Price version",
+  priceAfter:"Adjusted (since Jul 30, 2026)",
+  priceBefore:"Legacy (Jul 2026 prices)",
   resetAll:"Reset all",
   chartPrice:"Price vs. Ability",
   viewPrice:"Price",
@@ -47,7 +50,7 @@ const EN_TEXT={
 
 const EN_HTML={
   weightInfo:'<strong>1.00× = GPT-5.5 Medium; lower combined values use fewer resources.</strong> The calculation combines relative price, latency, and token ratios. Weights change the orange combined recommendation and, in the Combined view, move the points and green line. The top price budget still determines the main recommendation.',
-  footer:'<strong>Main rule:</strong> Filter by price budget, then select the highest-ability configuration within budget. The combined recommendation also obeys the price budget and ability-loss limit, then finds the lowest resource burden under the selected price, latency, and token weights.<br><strong>Data:</strong> Cost, output tokens, and latency for all 9 benchmarks come from the supplied official SVGs. Resource values are reconstructed from point geometry and axis ticks to avoid rounded aria-label values becoming zero.'
+  footer:'<strong>Main rule:</strong> Filter by price budget, then select the highest-ability configuration within budget. The combined recommendation also obeys the price budget and ability-loss limit, then finds the lowest resource burden under the selected price, latency, and token weights.<br><strong>Data:</strong> Cost, output tokens, and latency for all 9 benchmarks come from the supplied official SVGs. Resource values are reconstructed from point geometry and axis ticks to avoid rounded aria-label values becoming zero.<br><strong>Price version:</strong> The default “After Jul 30, 2026” scales Luna / Terra benchmark costs by the official 2026-07-30 price change (×0.2 / ×0.8; Sol unchanged). Choose “Legacy” to restore the July 2026 rates. The choice is remembered in the browser.'
 };
 
 const EN_ARIA={

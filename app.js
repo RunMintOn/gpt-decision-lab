@@ -1,6 +1,10 @@
 const ROWS=DATA.rows,GROUPS=DATA.groups,CORE=DATA.core_models;
 const EFFORTS=["None","Low","Medium","High","Xhigh","Max"];
 const COLORS={"GPT-5.5":"#8057c5","GPT-5.6 Luna":"#e4862d","GPT-5.6 Terra":"#0b9b78","GPT-5.6 Sol":"#315bd6","GPT-5.6 Sol Ultra":"#d65268","GPT-5.4":"#7b8598"};
+// 价格版本：默认“调整后”（2026-07-30 官网调价，Luna −80% / Terra −20%），
+// “调整前”恢复 2026-07 benchmark 发布时对应的老价格（即 data.js 原值）。
+let priceVersion=localStorage.getItem("gpdl:price");
+if(priceVersion!=="after"&&priceVersion!=="before")priceVersion="after";
 const state={
   scenario:"coding",benchmark:"Agents' Last Exam",basis:"costIndex",view:"cost",budget:1,
   tolerance:4,costWeight:60,latencyWeight:30,tokenWeight:10,focusModel:null
@@ -23,13 +27,14 @@ function buildConfigs(){
   mods.forEach(model=>EFFORTS.forEach(effort=>{
     const rr=bs.map(b=>ROWS.find(r=>r.benchmark===b&&r.model===model&&r.effort===effort)).filter(Boolean);
     if(rr.length!==bs.length||bs.some(b=>!base[b]))return;
+    const costRows=rr.map(r=>r.cost_usd*(priceVersion==="after"&&(model==="GPT-5.6 Luna"||model==="GPT-5.6 Terra")?(model==="GPT-5.6 Luna"?.2:.8):1));
     out.push({
       model,effort,
       ability:rr.reduce((a,r)=>a+100*r.score/best[r.benchmark],0)/rr.length,
-      costIndex:gm(rr.map(r=>r.cost_usd/base[r.benchmark].cost_usd)),
+      costIndex:gm(rr.map((r,i)=>costRows[i]/base[r.benchmark].cost_usd)),
       tokenIndex:gm(rr.map(r=>r.output_tokens/base[r.benchmark].output_tokens)),
       latencyIndex:gm(rr.map(r=>r.latency_min/base[r.benchmark].latency_min)),
-      rawCost:rr.reduce((a,r)=>a+r.cost_usd,0),
+      rawCost:costRows.reduce((a,b)=>a+b,0),
       rawTokens:rr.reduce((a,r)=>a+r.output_tokens,0),
       rawLatency:rr.reduce((a,r)=>a+r.latency_min,0)/rr.length
     });
@@ -291,6 +296,8 @@ function init(){
   $("#scenario").onchange=e=>{state.scenario=e.target.value;$("#benchmark").disabled=state.scenario!=="single";state.budget=1;rebuild()};
   $("#benchmark").onchange=e=>{state.benchmark=e.target.value;state.budget=1;rebuild()};
   $("#budgetBasis").onchange=e=>{state.basis=e.target.value;state.budget=state.basis==="costIndex"?1:current.configs.find(c=>c.model==="GPT-5.5"&&c.effort==="Medium")?.rawCost||1;rebuild()};
+  $("#priceVer").value=priceVersion;
+  $("#priceVer").onchange=e=>{priceVersion=e.target.value;localStorage.setItem("gpdl:price",priceVersion);rebuild()};
   $$(".viewBtn").forEach(b=>b.onclick=()=>{state.view=b.dataset.view;renderStatic();updateBudget()});
   $("#budgetSlider").addEventListener("input",e=>scheduleBudget(sliderToValue(e.target.value)),{passive:true});
   $("#budgetNumber").oninput=e=>{const v=+e.target.value;if(Number.isFinite(v)&&v>0)scheduleBudget(v)};
@@ -304,6 +311,7 @@ function init(){
   paintRange($("#tolerance"));syncWeightControls();
   $("#reset").onclick=()=>{
     Object.assign(state,{scenario:"coding",benchmark:"Agents' Last Exam",basis:"costIndex",view:"cost",budget:1,tolerance:4,costWeight:60,latencyWeight:30,tokenWeight:10,focusModel:null});
+    priceVersion="after";localStorage.setItem("gpdl:price","after");$("#priceVer").value="after";
     $("#scenario").value="coding";$("#benchmark").value=state.benchmark;$("#benchmark").disabled=true;$("#budgetBasis").value="costIndex";
     $("#tolerance").value=4;paintRange($("#tolerance"));syncWeightControls();
     rebuild();

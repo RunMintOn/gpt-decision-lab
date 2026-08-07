@@ -37,6 +37,7 @@
   <div><label data-i18n="sims">Monte Carlo 次数</label><input id="sims" type="number" value="1500" min="100" max="10000" step="100"></div>
   <div><label data-i18n="seed">随机种子</label><input id="seed" type="number" value="56" step="1"></div>
   <div><label data-i18n="pricing">价格口径</label><select id="pricing"><option value="standard" selected>Standard API</option><option value="discount">Batch / Flex</option></select></div>
+  <div><label data-i18n="priceVersion">价格版本</label><select id="priceVer"><option value="after" selected data-i18n="priceAfter">调整后（2026-07-30 起）</option><option value="before" data-i18n="priceBefore">调整前（2026-07-18 核验价）</option></select></div>
   <div style="display:flex;align-items:end;gap:8px"><button id="reroll" data-i18n="reroll">换一条随机样本</button><button id="reset" class="secondary" data-i18n="reset">恢复默认</button></div>
 </section>
 
@@ -50,7 +51,7 @@
 
 <section class="grid">
   <section class="panel">
-    <div class="head"><h2 data-i18n="singleTitle">单轮成本 vs Prompt input tokens</h2><span class="badge" data-i18n="brokenAxis">断轴：正常趋势与灾难尖峰分开显示</span></div>
+    <div class="head"><h2 data-i18n="singleTitle">单轮成本 vs Prompt input tokens</h2><span class="badge" data-i18n="brokenAxis">断轴：正常趋势与灾难尖峰分开显示</span><span class="badge" id="chartBadge" style="border-color:#315bd6;color:#315bd6"></span></div>
     <div class="body">
       <div class="chartbox"><svg id="singleChart" viewBox="0 0 1120 700"></svg></div>
       <div class="legend"><span><i class="swatch" style="background:#0b9b78"></i><span data-i18n="idealPrefix">理想前缀复用（无整段灾难）</span></span><span><i class="swatch" style="background:#315bd6"></i><span data-i18n="expectedSingle">固定灾难次数随机分布后的单轮期望</span></span><span><i class="swatch" style="background:#d65268"></i><span data-i18n="sampleDisasters">具体样本的灾难位置与重建成本</span></span></div>
@@ -58,7 +59,7 @@
     </div>
   </section>
   <section class="panel">
-    <div class="head"><h2 data-i18n="cumTitle">累计总成本 vs Prompt input tokens</h2><span class="badge" data-i18n="band">浅蓝带 = 10–90% 随机区间</span></div>
+    <div class="head"><h2 data-i18n="cumTitle">累计总成本 vs Prompt input tokens</h2><span class="badge" data-i18n="band">浅蓝带 = 10–90% 随机区间</span><span class="badge" id="cumBadge" style="border-color:#315bd6;color:#315bd6"></span></div>
     <div class="body">
       <div class="chartbox"><svg id="cumChart" viewBox="0 0 1120 630"></svg></div>
       <div class="legend"><span><i class="swatch" style="background:#0b9b78"></i><span data-i18n="baseline">无灾难基准</span></span><span><i class="swatch" style="background:#d65268"></i><span data-i18n="sampleCum">具体样本累计成本</span></span></div>
@@ -74,7 +75,7 @@
 
 <section class="panel foot" data-i18n-html="footer">
   <strong>模型定义：</strong>第 1 轮没有历史缓存，因此按完整 Cache Write 处理，但不计入“灾难轮”。灾难轮从第 2 轮至最后一轮无放回抽取；灾难轮结束后，下一轮恢复正常前缀缓存读取。<br>
-  <strong>价格规则：</strong>默认使用 GPT‑5.6 Standard API 的 Input、Cached Input、Cache Write 和 Output 价格。当前官方规则仍规定输入超过 272K 时，整次请求切换到长上下文价格。价格核验日期：2026-07-18。这里是 API 等效成本，不等于 Plus/Codex 套餐额度扣减。
+  <strong>价格规则：</strong>默认使用 GPT‑5.6 Standard API 的 Input、Cached Input、Cache Write 和 Output 价格。当前官方规则仍规定输入超过 272K 时，整次请求切换到长上下文价格。价格核验日期：2026-07-30（含 Luna −80% / Terra −20% 调价，Sol 不变）；选择“调整前”可恢复 2026‑07‑18 核验的旧价格。这里是 API 等效成本，不代表 Plus/Codex 套餐额度扣减。
 </section>
 </main>
 <script src="context-i18n.js"></script>

@@ -1,19 +1,27 @@
 
+// 官网 API 价格（USD / 1M tokens），核验日期 2026-07-30：Luna −80%、Terra −20%，Sol 不变。
+// “调整前”价格 = 本表 × LEGACY_FACTOR（与 2026-07-18 核验旧价完全一致）。
+const LEGACY_FACTOR={Luna:5,Terra:1.25,Sol:1};
 const PRICING={
   standard:{
-    Luna:{short:{input:1,cache:.1,write:1.25,output:6},long:{input:2,cache:.2,write:2.5,output:9}},
-    Terra:{short:{input:2.5,cache:.25,write:3.125,output:15},long:{input:5,cache:.5,write:6.25,output:22.5}},
+    Luna:{short:{input:.2,cache:.02,write:.25,output:1.2},long:{input:.4,cache:.04,write:.5,output:1.8}},
+    Terra:{short:{input:2,cache:.2,write:2.5,output:12},long:{input:4,cache:.4,write:5,output:18}},
     Sol:{short:{input:5,cache:.5,write:6.25,output:30},long:{input:10,cache:1,write:12.5,output:45}}
   },
   discount:{
-    Luna:{short:{input:.5,cache:.05,write:.625,output:3},long:{input:1,cache:.1,write:1.25,output:4.5}},
-    Terra:{short:{input:1.25,cache:.125,write:1.5625,output:7.5},long:{input:2.5,cache:.25,write:3.125,output:11.25}},
+    Luna:{short:{input:.1,cache:.01,write:.125,output:.6},long:{input:.2,cache:.02,write:.25,output:.9}},
+    Terra:{short:{input:1,cache:.1,write:1.25,output:6},long:{input:2,cache:.2,write:2.5,output:9}},
     Sol:{short:{input:2.5,cache:.25,write:3.125,output:15},long:{input:5,cache:.5,write:6.25,output:22.5}}
   }
 };
 const COLORS={base:"#0b9b78",mean:"#315bd6",sample:"#d65268",band:"rgba(49,91,214,.14)"};
 const $=s=>document.querySelector(s);
 let comparisonModel="Luna";
+let priceVersion=localStorage.getItem("gpdl:price");
+if(priceVersion!=="after"&&priceVersion!=="before")priceVersion="after";
+const savedModel=localStorage.getItem("gpdl:model");
+if(["Luna","Terra","Sol"].includes(savedModel))$("#model").value=savedModel;
+$("#priceVer").value=priceVersion;
 const EN=document.documentElement.lang.toLowerCase().startsWith("en");
 const tr=(zh,en)=>EN?en:zh;
 const BIAS_NAMES={
@@ -58,7 +66,9 @@ function contextAt(t,p){
   return p.startContext+(p.maxContext-p.startContext)*(t-1)/(p.turns-1);
 }
 function rates(context,model,pricing){
-  return PRICING[pricing][model][context>272000?"long":"short"];
+  const r=PRICING[pricing][model][context>272000?"long":"short"];
+  const f=priceVersion==="before"?(LEGACY_FACTOR[model]||1):1;
+  return {input:r.input*f,cache:r.cache*f,write:r.write*f,output:r.output*f};
 }
 function normalCost(context,p,model=p.model){
   const r=rates(context,model,p.pricing);
@@ -258,6 +268,12 @@ function renderBiasTable(p){
 }
 function render(){
   const p=params(),sim=simulate(p);
+  const modelLabel=$("#model").selectedOptions[0].textContent;
+  const priceLabel=priceVersion==="before"?tr("2026-07-18 调整前价格","pre-Jul-30 pricing"):tr("2026-07-30 调整后价格","post-Jul-30 pricing");
+  const badge=modelLabel+tr(" · "," · ")+priceLabel;
+  $("#chartBadge").textContent=badge;
+  $("#cumBadge").textContent=badge;
+  drawSingle(p,sim);drawCum(p,sim);renderBiasTable(p);
   drawSingle(p,sim);drawCum(p,sim);renderBiasTable(p);
   const baseTotal=sim.base.at(-1).cum,extra=sim.totalMean-baseTotal,lastBase=sim.base.at(-1).cost,lastMean=sim.meanRows.at(-1).meanCost;
   $("#failureRate").textContent=(100*p.failures/p.turns).toFixed(2)+"%";
@@ -270,9 +286,17 @@ function render(){
 let timer;
 function schedule(){clearTimeout(timer);timer=setTimeout(render,90)}
 ["model","turns","maxContext","startContext","newInput","output","failures","bias","sims","seed","pricing"].forEach(id=>$("#"+id).addEventListener("input",schedule));
+$("#priceVer").addEventListener("change",()=>{
+  priceVersion=$("#priceVer").value;
+  localStorage.setItem("gpdl:price",priceVersion);
+  render();
+});
+$("#model").addEventListener("change",()=>localStorage.setItem("gpdl:model",$("#model").value));
 $("#reroll").onclick=()=>{$("#seed").value=(+$("input#seed").value||0)+1;render()};
 $("#reset").onclick=()=>{
-  $("#model").value="Sol";$("#turns").value=130;$("#maxContext").value=372000;$("#startContext").value=2000;
+  $("#model").value="Sol";$("#priceVer").value="after";priceVersion="after";
+  localStorage.setItem("gpdl:model","Sol");localStorage.setItem("gpdl:price","after");
+  $("#turns").value=130;$("#maxContext").value=372000;$("#startContext").value=2000;
   $("#newInput").value=1512;$("#output").value=100;$("#failures").value=5;$("#bias").value="uniform";
   $("#sims").value=1500;$("#seed").value=56;$("#pricing").value="standard";comparisonModel="Luna";
   document.querySelectorAll(".modelTab").forEach(b=>b.classList.toggle("active",b.dataset.model==="Luna"));

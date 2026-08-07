@@ -39,6 +39,10 @@
     <option value="costIndex" data-i18n="fairCost">公平成本指数</option>
     <option value="rawCost" data-i18n="rawCost">官网测试套件原始成本</option>
   </select></div>
+  <div><label data-i18n="priceVersion">价格版本</label><select id="priceVer">
+    <option value="after" data-i18n="priceAfter">调整后（2026-07-30 起）</option>
+    <option value="before" data-i18n="priceBefore">调整前（2026-07 官网价）</option>
+  </select></div>
   <button id="reset" data-i18n="resetAll">恢复默认</button>
 </section>
 
@@ -127,6 +131,7 @@
 <section class="panel foot" data-i18n-html="footer">
   <strong>主逻辑：</strong>先按价格预算过滤，再选择预算内综合能力最高的配置。综合推荐也遵守价格预算和能力损失范围，再按价格、延迟、Token 比例寻找资源负担最低的备选。<br>
   <strong>数据：</strong>9 个 benchmark 的 Cost、Output Tokens、Latency 均来自你上传的官方 SVG；资源数值由 SVG 点坐标与坐标轴刻度反算，避免 aria-label 取整为 0 的问题。
+  <strong>价格版本：</strong>默认“调整后”，Luna / Terra 的 benchmark 原始成本按 2026-07-30 官网调价比例缩放（×0.2 / ×0.8，Sol 不变）；切到“调整前”恢复 2026-07 老价格。选择记录在浏览器本地。
 </section>
 </main>
 <div id="tip" class="tooltip"></div>

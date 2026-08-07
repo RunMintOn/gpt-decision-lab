@@ -5,7 +5,7 @@ const CONTEXT_TEXT={
   heading:"Context and cache cost simulator",
   model:"Model",turns:"Total turns",maxContext:"Final prompt input tokens",startContext:"First-request prompt input tokens",
   newInput:"New uncached input per turn",output:"Output tokens per turn",failures:"Number of disaster requests",bias:"Disaster-position bias",
-  uniform:"Uniform random",early:"Early-biased",middle:"Middle-biased",late:"Late-biased",sims:"Monte Carlo runs",seed:"Random seed",pricing:"Pricing tier",
+  uniform:"Uniform random",early:"Early-biased",middle:"Middle-biased",late:"Late-biased",sims:"Monte Carlo runs",seed:"Random seed",pricing:"Pricing tier",priceVersion:"Price version",priceAfter:"After Jul 30, 2026",priceBefore:"Before Jul 30 (2026-07-18 rates)",
   reroll:"Draw another sample",reset:"Reset",failureRate:"Disaster rate",failureRateSub:"Fixed count ÷ total turns",
   growth:"Prompt growth per turn",growthSub:"Derived from first, final, and total turns",lastCost:"Last-request cost",lastCostSub:"Baseline / Monte Carlo expectation",
   totalCost:"Cumulative total cost",totalCostSub:"Baseline / Monte Carlo expectation",extraCost:"Extra disaster cost",extraCostSub:"Mean and 10–90% interval",
@@ -18,7 +18,7 @@ const CONTEXT_TEXT={
 };
 const CONTEXT_HTML={
   subtitle:'The x-axis is the current request’s <strong>prompt input tokens</strong>. Under ideal prefix reuse, the history shared with the previous request remains cached. A fixed number of “disaster requests” invalidate the entire prefix and rebuild it from zero at cache-write rates.',
-  footer:'<strong>Model:</strong> The first request has no reusable history and is charged as a full cache write, but it is not counted as a disaster. Disaster turns are sampled without replacement from turns 2 through the end; normal prefix reuse resumes on the next request.<br><strong>Pricing:</strong> Defaults to GPT-5.6 Standard API input, cached-input, cache-write, and output rates. The current official rule still switches the full request to long-context pricing above 272K input tokens. Pricing verified 2026-07-18. Values are API-equivalent costs, not Plus/Codex subscription deductions.'
+  footer:'<strong>Model:</strong> The first request has no reusable history and is charged as a full cache write, but it is not counted as a disaster. Disaster turns are sampled without replacement from turns 2 through the end; normal prefix reuse resumes on the next request.<br><strong>Pricing:</strong> Defaults to GPT-5.6 Standard API input, cached-input, cache-write, and output rates. The current official rule still switches the full request to long-context pricing above 272K input tokens. Pricing verified 2026-07-30 (Luna −80% / Terra −20%; Sol unchanged); choose “Before Jul 30” to restore the 2026-07-18 rates. Values are API-equivalent costs, not Plus/Codex subscription deductions.'
 };
 if(CONTEXT_EN){
   document.title=CONTEXT_TEXT.pageTitle;
