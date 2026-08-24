@@ -7,3 +7,4 @@ Thumbs.db
 # Local tooling output
 node_modules/
 *.log
+X_THREAD.md
